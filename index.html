@@ -1,1 +1,603 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sesh Name Is Sufficient | Divine Astrologer</title>
+
+  <meta name="description" content="Sesh Name Is Sufficient - Divine Astrology Consultation for health, family, love, marriage, career, business, numerology, spiritual healing and more.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #070707;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(7, 7, 7, 0.96);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+    }
+
+    .nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 800;
+      color: #d8b45a;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #eee;
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      color: #d8b45a;
+    }
+
+    .menu {
+      display: none;
+      font-size: 28px;
+      color: #d8b45a;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 50% 30%, rgba(212,175,55,.20), transparent 35%),
+        radial-gradient(circle at 20% 80%, rgba(25,55,100,.25), transparent 35%),
+        #070707;
+    }
+
+    .hero-content {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 18px;
+      border: 1px solid rgba(212,175,55,.5);
+      border-radius: 50px;
+      color: #d8b45a;
+      font-size: 13px;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 7vw, 76px);
+      line-height: 1.05;
+      margin-bottom: 20px;
+    }
+
+    .gold {
+      color: #d8b45a;
+    }
+
+    .hero p {
+      color: #c7c7c7;
+      font-size: 18px;
+      max-width: 680px;
+      margin: 0 auto 32px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 25px;
+      border-radius: 8px;
+      font-weight: 700;
+      transition: .2s;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: #d8b45a;
+      color: #080808;
+    }
+
+    .btn-secondary {
+      border: 1px solid #d8b45a;
+      color: #d8b45a;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 85px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title span {
+      color: #d8b45a;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+    }
+
+    .section-title h2 {
+      font-size: 38px;
+      margin-top: 8px;
+    }
+
+    .section-title p {
+      color: #aaa;
+      max-width: 650px;
+      margin: 12px auto;
+    }
+
+    /* ABOUT */
+
+    .about {
+      background: #0c0c0c;
+    }
+
+    .about-box {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about-box p {
+      color: #bbb;
+      margin-bottom: 18px;
+    }
+
+    /* SERVICES */
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .service {
+      padding: 28px 20px;
+      background: linear-gradient(145deg, #111, #090909);
+      border: 1px solid rgba(212,175,55,.18);
+      border-radius: 14px;
+      transition: .25s;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+      border-color: rgba(212,175,55,.7);
+    }
+
+    .service-icon {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .service h3 {
+      font-size: 17px;
+      margin-bottom: 8px;
+      color: #e6c76a;
+    }
+
+    .service p {
+      font-size: 13px;
+      color: #999;
+    }
+
+    /* CONTACT */
+
+    .contact {
+      background: #0c0c0c;
+    }
+
+    .contact-box {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      padding: 45px 25px;
+      border: 1px solid rgba(212,175,55,.3);
+      border-radius: 20px;
+      background: #090909;
+    }
+
+    .contact-box h2 {
+      font-size: 35px;
+      color: #d8b45a;
+      margin-bottom: 15px;
+    }
+
+    .phone {
+      display: block;
+      font-size: 20px;
+      margin: 10px;
+      color: white;
+    }
+
+    .address {
+      color: #aaa;
+      margin: 20px auto;
+      max-width: 450px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 35px 0;
+      text-align: center;
+      background: #050505;
+      border-top: 1px solid rgba(212,175,55,.15);
+    }
+
+    footer strong {
+      color: #d8b45a;
+    }
+
+    footer p {
+      color: #777;
+      font-size: 13px;
+      margin-top: 8px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 850px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .menu {
+        display: block;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero {
+        min-height: 80vh;
+      }
+    }
+
+    @media (max-width: 520px) {
+
+      section {
+        padding: 65px 0;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .section-title h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+    <div class="container nav">
+
+      <div class="logo">
+        SESH
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="menu">☰</div>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+
+  <section class="hero" id="home">
+
+    <div class="container hero-content">
+
+      <div class="badge">
+        ✦ DIVINE ASTROLOGER ✦
+      </div>
+
+      <h1>
+        Sesh Name Is <span class="gold">Sufficient</span>
+      </h1>
+
+      <p>
+        Divine guidance and consultation for life's most important questions.
+        Find clarity, direction and spiritual guidance for your journey.
+      </p>
+
+      <div class="buttons">
+
+        <a class="btn btn-primary" href="tel:+919811562656">
+          📞 Call Now
+        </a>
+
+        <a class="btn btn-secondary"
+           href="https://wa.me/919811562656">
+          💬 WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+
+  <section class="about" id="about">
+
+    <div class="container">
+
+      <div class="section-title">
+        <span>About Us</span>
+        <h2>Divine Guidance for Your Life</h2>
+      </div>
+
+      <div class="about-box">
+
+        <p>
+          Sesh Name Is Sufficient provides personalised astrology and
+          spiritual consultation for a wide range of life concerns.
+        </p>
+
+        <p>
+          Our consultation areas include health, family matters, love,
+          marriage, education, career, business, prosperity, numerology,
+          gemstones, rudraksha and spiritual healing.
+        </p>
+
+        <p>
+          Contact us for personalised guidance and consultation.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+
+  <section id="services">
+
+    <div class="container">
+
+      <div class="section-title">
+        <span>Our Expertise</span>
+        <h2>Our Services</h2>
+        <p>
+          Consultation and guidance across multiple areas of life.
+        </p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service">
+          <div class="service-icon">❤️</div>
+          <h3>Health</h3>
+          <p>Astrological guidance for health-related concerns.</p>
+        </div>
+
+        <div class="service">
+          <div class="service-icon">🏠</div>
+          <h3>Family Disputes</h3>
+          <p>Guidance for family relationships and disputes.</p>
+        </div>
+
+        <div class="service">
+          <div class="service-icon">💞</div>
+          <h3>Love & Marriage</h3>
+          <p>Guidance regarding love, relationships and marriage.</p>
+        </div>
+
+        <div class="service">
+          <div class="service-icon">🎓</div>
+          <h3>Education</h3>
+          <p>Guidance for education and concentration.</p>
+        </div>
+
+        <div class="service">
+          <div class="service-icon">💼</div>
+          <h3>Career & Job</h3>
+          <p>Career direction and professional guidance.</p>
+        </div>
+
+        <div class="service">
+          <div class="service-icon">📈</div>
+          <h3>Business</h3>
+          <p>Business and prosperity consultation.</p>
+        </div>
+
+        <div class="service">
+          <div class="service-icon">✨</div>
+          <h3>Spiritual Healing</h3>
+          <p>Spiritual guidance and personal healing sessions.</p>
+        </div>
+
+        <div class="service">
+          <div class="service-icon">🔢</div>
+          <h3>Numerology</h3>
+          <p>Numerology consultation and guidance.</p>
+        </div>
+
+        <div class="service">
+          <div class="service-icon">💎</div>
+          <h3>Gemstone</h3>
+          <p>Personalised gemstone consultation.</p>
+        </div>
+
+        <div class="service">
+          <div class="service-icon">📿</div>
+          <h3>Rudraksha</h3>
+          <p>Guidance for suitable rudraksha selection.</p>
+        </div>
+
+        <div class="service">
+          <div class="service-icon">🌌</div>
+          <h3>Past Life Regression</h3>
+          <p>Spiritual exploration and guided consultation.</p>
+        </div>
+
+        <div class="service">
+          <div class="service-icon">🌟</div>
+          <h3>Prosperity</h3>
+          <p>Guidance for prosperity and life goals.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section class="contact" id="contact">
+
+    <div class="container">
+
+      <div class="contact-box">
+
+        <h2>Contact for a Tension-Free Life</h2>
+
+        <p>
+          Get in touch for personalised consultation.
+        </p>
+
+        <a class="phone" href="tel:+919811562656">
+          📞 9811562656
+        </a>
+
+        <a class="phone" href="tel:+917701862656">
+          📞 7701862656
+        </a>
+
+        <div class="address">
+          📍 E-122, Pandav Nagar,<br>
+          Samaspur Road,<br>
+          Delhi – 110091
+        </div>
+
+        <div class="buttons">
+
+          <a class="btn btn-primary"
+             href="tel:+919811562656">
+            Book Consultation
+          </a>
+
+          <a class="btn btn-secondary"
+             href="https://wa.me/919811562656">
+            WhatsApp Us
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <strong>Sesh Name Is Sufficient</strong>
+
+      <p>
+        © 2026 Sesh Name Is Sufficient. All rights reserved.
+      </p>
+
+    </div>
+
+  </footer>
+
+</body>
+  </html>

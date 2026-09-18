@@ -1,602 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Sash Name Is Sufficient | Divine Astrologer</title>
-
-  <meta name="description" content="Sash Name Is Sufficient - Divine Astrology Consultation for health, family, love, marriage, career, business, numerology, spiritual healing and more.">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #070707;
-      color: #ffffff;
-      line-height: 1.6;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .container {
-      width: 92%;
-      max-width: 1150px;
-      margin: auto;
-    }
-
-    /* HEADER */
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(7, 7, 7, 0.96);
-      border-bottom: 1px solid rgba(212, 175, 55, 0.25);
-    }
-
-    .nav {
-      min-height: 72px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .logo {
-      font-size: 20px;
-      font-weight: 800;
-      color: #d8b45a;
-      letter-spacing: 1px;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 25px;
-      list-style: none;
-    }
-
-    .nav-links a {
-      color: #eee;
-      font-size: 14px;
-    }
-
-    .nav-links a:hover {
-      color: #d8b45a;
-    }
-
-    .menu {
-      display: none;
-      font-size: 28px;
-      color: #d8b45a;
-    }
-
-    /* HERO */
-
-    .hero {
-      min-height: 88vh;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-      background:
-        radial-gradient(circle at 50% 30%, rgba(212,175,55,.20), transparent 35%),
-        radial-gradient(circle at 20% 80%, rgba(25,55,100,.25), transparent 35%),
-        #070707;
-    }
-
-    .hero-content {
-      max-width: 850px;
-      margin: auto;
-    }
-
-    .badge {
-      display: inline-block;
-      padding: 8px 18px;
-      border: 1px solid rgba(212,175,55,.5);
-      border-radius: 50px;
-      color: #d8b45a;
-      font-size: 13px;
-      margin-bottom: 25px;
-    }
-
-    .hero h1 {
-      font-size: clamp(38px, 7vw, 76px);
-      line-height: 1.05;
-      margin-bottom: 20px;
-    }
-
-    .gold {
-      color: #d8b45a;
-    }
-
-    .hero p {
-      color: #c7c7c7;
-      font-size: 18px;
-      max-width: 680px;
-      margin: 0 auto 32px;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      padding: 14px 25px;
-      border-radius: 8px;
-      font-weight: 700;
-      transition: .2s;
-      display: inline-block;
-    }
-
-    .btn-primary {
-      background: #d8b45a;
-      color: #080808;
-    }
-
-    .btn-secondary {
-      border: 1px solid #d8b45a;
-      color: #d8b45a;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-    }
-
-    /* SECTIONS */
-
-    section {
-      padding: 85px 0;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 50px;
-    }
-
-    .section-title span {
-      color: #d8b45a;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 13px;
-    }
-
-    .section-title h2 {
-      font-size: 38px;
-      margin-top: 8px;
-    }
-
-    .section-title p {
-      color: #aaa;
-      max-width: 650px;
-      margin: 12px auto;
-    }
-
-    /* ABOUT */
-
-    .about {
-      background: #0c0c0c;
-    }
-
-    .about-box {
-      max-width: 850px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .about-box p {
-      color: #bbb;
-      margin-bottom: 18px;
-    }
-
-    /* SERVICES */
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
-    .service {
-      padding: 28px 20px;
-      background: linear-gradient(145deg, #111, #090909);
-      border: 1px solid rgba(212,175,55,.18);
-      border-radius: 14px;
-      transition: .25s;
-    }
-
-    .service:hover {
-      transform: translateY(-5px);
-      border-color: rgba(212,175,55,.7);
-    }
-
-    .service-icon {
-      font-size: 30px;
-      margin-bottom: 15px;
-    }
-
-    .service h3 {
-      font-size: 17px;
-      margin-bottom: 8px;
-      color: #e6c76a;
-    }
-
-    .service p {
-      font-size: 13px;
-      color: #999;
-    }
-
-    /* CONTACT */
-
-    .contact {
-      background: #0c0c0c;
-    }
-
-    .contact-box {
-      max-width: 800px;
-      margin: auto;
-      text-align: center;
-      padding: 45px 25px;
-      border: 1px solid rgba(212,175,55,.3);
-      border-radius: 20px;
-      background: #090909;
-    }
-
-    .contact-box h2 {
-      font-size: 35px;
-      color: #d8b45a;
-      margin-bottom: 15px;
-    }
-
-    .phone {
-      display: block;
-      font-size: 20px;
-      margin: 10px;
-      color: white;
-    }
-
-    .address {
-      color: #aaa;
-      margin: 20px auto;
-      max-width: 450px;
-    }
-
-    /* FOOTER */
-
-    footer {
-      padding: 35px 0;
-      text-align: center;
-      background: #050505;
-      border-top: 1px solid rgba(212,175,55,.15);
-    }
-
-    footer strong {
-      color: #d8b45a;
-    }
-
-    footer p {
-      color: #777;
-      font-size: 13px;
-      margin-top: 8px;
-    }
-
-    /* MOBILE */
-
-    @media (max-width: 850px) {
-
-      .nav-links {
-        display: none;
-      }
-
-      .menu {
-        display: block;
-      }
-
-      .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .hero {
-        min-height: 80vh;
-      }
-    }
-
-    @media (max-width: 520px) {
-
-      section {
-        padding: 65px 0;
-      }
-
-      .services-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero h1 {
-        font-size: 42px;
-      }
-
-      .hero p {
-        font-size: 16px;
-      }
-
-      .section-title h2 {
-        font-size: 30px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sash Name Is Sufficient | Online Vedic Astrologer & Spiritual Consultation Worldwide</title>
+    <meta name="description" content="Global Divine Astrologer consultation available worldwide (USA, UK, Canada, Australia, UAE & India). Expert guidance on Career, Marriage, Numerology, Gemstones & Spiritual Healing via Zoom and WhatsApp.">
+    <meta name="keywords" content="Online Vedic Astrologer USA, Astrologer in UK, Indian Astrologer Canada, Online Kundli Reading, Global Astrology Consultation, Numerology, Gemstone Consultation">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sashnameissufficient.com/">
+
+    <!-- Social / WhatsApp Preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sashnameissufficient.com/">
+    <meta property="og:title" content="Divine Astrologer Sash | Worldwide Online Consultation">
+    <meta property="og:description" content="Book 1-on-1 Online Astrology & Spiritual Healing session across any timezone via Zoom & WhatsApp.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0b0c10;
+            color: #c5c6c7;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1f2833;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #e5a93c;
+        }
+        header h1 {
+            color: #e5a93c;
+            font-size: 26px;
+            letter-spacing: 1px;
+        }
+        header p {
+            color: #ffffff;
+            font-size: 14px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+        .hero {
+            text-align: center;
+            padding: 40px 15px;
+            background: linear-gradient(180deg, #1f2833 0%, #0b0c10 100%);
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border: 1px solid #333;
+        }
+        .hero h2 {
+            color: #e5a93c;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 17px;
+            color: #ffffff;
+            max-width: 800px;
+            margin: auto;
+        }
+        .global-badge {
+            display: inline-block;
+            background: rgba(229, 169, 60, 0.15);
+            color: #f1c40f;
+            border: 1px solid #f1c40f;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin: 18px 0;
+            font-weight: bold;
+        }
+        .btn-group {
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 8px;
+            transition: 0.3s;
+        }
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: #ffffff;
+        }
+        .btn-call {
+            background-color: #e5a93c;
+            color: #0b0c10;
+        }
+        .section-title {
+            text-align: center;
+            color: #e5a93c;
+            font-size: 24px;
+            margin: 35px 0 20px 0;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .service-card {
+            background-color: #1f2833;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 3px solid #e5a93c;
+        }
+        .service-card h3 {
+            color: #ffffff;
+            font-size: 17px;
+        }
+        .global-box {
+            background-color: #141b22;
+            border: 1px dashed #e5a93c;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        .contact-box {
+            background-color: #1f2833;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 25px;
+        }
+        .contact-box p {
+            margin: 8px 0;
+            font-size: 15px;
+        }
+        .disclaimer {
+            font-size: 12px;
+            color: #888;
+            margin-top: 30px;
+            text-align: center;
+            border-top: 1px solid #333;
+            padding-top: 15px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+            color: #777;
+            background-color: #08080a;
+            margin-top: 30px;
+        }
+    </style>
 </head>
-
 <body>
 
-  <!-- HEADER -->
-
-  <header>
-    <div class="container nav">
-
-      <div class="logo">
-        SASH
-      </div>
-
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-
-      <div class="menu">☰</div>
-
-    </div>
-  </header>
-
-
-  <!-- HERO -->
-
-  <section class="hero" id="home">
-
-    <div class="container hero-content">
-
-      <div class="badge">
-        ✦ DIVINE ASTROLOGER ✦
-      </div>
-
-      <h1>
-        Sash Name Is <span class="gold">Sufficient</span>
-      </h1>
-
-      <p>
-        Divine guidance and consultation for life's most important questions.
-        Find clarity, direction and spiritual guidance for your journey.
-      </p>
-
-      <div class="buttons">
-
-        <a class="btn btn-primary" href="tel:+919811562656">
-          📞 Call Now
-        </a>
-
-        <a class="btn btn-secondary"
-           href="https://wa.me/919811562656">
-          💬 WhatsApp
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- ABOUT -->
-
-  <section class="about" id="about">
+    <header>
+        <p>DIVINE ASTROLOGER</p>
+        <h1>Sash Name Is Sufficient</h1>
+    </header>
 
     <div class="container">
+        <div class="hero">
+            <h2>Divine Guidance For Life's Important Questions</h2>
+            <p>“Divine guidance and consultation for life's most important questions. Find clarity, direction and spiritual guidance for your journey.”</p>
+            
+            <div class="global-badge">
+                🌍 Available Worldwide: USA, UK, Canada, Australia, UAE & India
+            </div>
 
-      <div class="section-title">
-        <span>About Us</span>
-        <h2>Divine Guidance for Your Life</h2>
-      </div>
+            <div class="btn-group">
+                <a href="https://wa.me/919811562656?text=Hello%20Divine%20Astrologer%20Sash,%20I%20want%20to%20book%20an%20online%20consultation." target="_blank" class="btn btn-whatsapp">
+                    💬 Book Consultation via WhatsApp
+                </a>
+                <a href="tel:+919811562656" class="btn btn-call">
+                    📞 Call: +91 9811562656
+                </a>
+            </div>
+            <p style="font-size: 13px; color: #aaa; margin-top: 10px;">
+                (Private 1-on-1 Sessions via Zoom, Google Meet & WhatsApp Across All Global Timezones)
+            </p>
+        </div>
 
-      <div class="about-box">
+        <h2 class="section-title">Our Spiritual & Astrology Services</h2>
+        <div class="services-grid">
+            <div class="service-card"><h3>Love & Marriage</h3></div>
+            <div class="service-card"><h3>Career & Job Guidance</h3></div>
+            <div class="service-card"><h3>Business Growth</h3></div>
+            <div class="service-card"><h3>Family Disputes Resolution</h3></div>
+            <div class="service-card"><h3>Health & Wellness Consultation</h3></div>
+            <div class="service-card"><h3>Education & Studies</h3></div>
+            <div class="service-card"><h3>Numerology Analysis</h3></div>
+            <div class="service-card"><h3>Spiritual Healing</h3></div>
+            <div class="service-card"><h3>Gemstone Consultation</h3></div>
+            <div class="service-card"><h3>Rudraksha Recommendation</h3></div>
+            <div class="service-card"><h3>Past Life Regression</h3></div>
+            <div class="service-card"><h3>Prosperity & Abundance</h3></div>
+        </div>
 
-        <p>
-          Sash Name Is Sufficient provides personalised astrology and
-          spiritual consultation for a wide range of life concerns.
-        </p>
+        <div class="global-box">
+            <h3 style="color: #e5a93c; margin-bottom: 10px;">Consult From Anywhere In The World</h3>
+            <p>Whether you are in the United States, United Kingdom, Canada, Australia, Gulf countries, or anywhere in India — distance is no barrier.</p>
+            <p style="margin-top: 8px; color: #fff;"><strong>Direct WhatsApp / Zoom Appointments Available</strong></p>
+        </div>
 
-        <p>
-          Our consultation areas include health, family matters, love,
-          marriage, education, career, business, prosperity, numerology,
-          gemstones, rudraksha and spiritual healing.
-        </p>
+        <div class="contact-box">
+            <h2 style="color: #e5a93c; margin-bottom: 15px;">Contact & Consultation Details</h2>
+            <p><strong>Primary Phone:</strong> <a href="tel:+919811562656" style="color: #e5a93c;">+91 9811562656</a></p>
+            <p><strong>Secondary Phone:</strong> <a href="tel:+917701862656" style="color: #e5a93c;">+91 7701862656</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/919811562656" style="color: #25D366;">Chat on WhatsApp (+91 9811562656)</a></p>
+            <p><strong>Address:</strong> E-122, Pandav Nagar, Samaspur Road, Delhi – 110091, India</p>
+        </div>
 
-        <p>
-          Contact us for personalised guidance and consultation.
-        </p>
-
-      </div>
-
+        <div class="disclaimer">
+            <strong>Disclaimer:</strong> Astrology, numerology, gemstone recommendations, and spiritual healing are traditional practices intended for spiritual guidance and self-discovery. These consultations do not offer guaranteed medical cures and must not be treated as a replacement for professional medical, legal, or financial advice.
+        </div>
     </div>
 
-  </section>
-
-
-  <!-- SERVICES -->
-
-  <section id="services">
-
-    <div class="container">
-
-      <div class="section-title">
-        <span>Our Expertise</span>
-        <h2>Our Services</h2>
-        <p>
-          Consultation and guidance across multiple areas of life.
-        </p>
-      </div>
-
-      <div class="services-grid">
-
-        <div class="service">
-          <div class="service-icon">❤️</div>
-          <h3>Health</h3>
-          <p>Astrological guidance for health-related concerns.</p>
-        </div>
-
-        <div class="service">
-          <div class="service-icon">🏠</div>
-          <h3>Family Disputes</h3>
-          <p>Guidance for family relationships and disputes.</p>
-        </div>
-
-        <div class="service">
-          <div class="service-icon">💞</div>
-          <h3>Love & Marriage</h3>
-          <p>Guidance regarding love, relationships and marriage.</p>
-        </div>
-
-        <div class="service">
-          <div class="service-icon">🎓</div>
-          <h3>Education</h3>
-          <p>Guidance for education and concentration.</p>
-        </div>
-
-        <div class="service">
-          <div class="service-icon">💼</div>
-          <h3>Career & Job</h3>
-          <p>Career direction and professional guidance.</p>
-        </div>
-
-        <div class="service">
-          <div class="service-icon">📈</div>
-          <h3>Business</h3>
-          <p>Business and prosperity consultation.</p>
-        </div>
-
-        <div class="service">
-          <div class="service-icon">✨</div>
-          <h3>Spiritual Healing</h3>
-          <p>Spiritual guidance and personal healing sessions.</p>
-        </div>
-
-        <div class="service">
-          <div class="service-icon">🔢</div>
-          <h3>Numerology</h3>
-          <p>Numerology consultation and guidance.</p>
-        </div>
-
-        <div class="service">
-          <div class="service-icon">💎</div>
-          <h3>Gemstone</h3>
-          <p>Personalised gemstone consultation.</p>
-        </div>
-
-        <div class="service">
-          <div class="service-icon">📿</div>
-          <h3>Rudraksha</h3>
-          <p>Guidance for suitable rudraksha selection.</p>
-        </div>
-
-        <div class="service">
-          <div class="service-icon">🌌</div>
-          <h3>Past Life Regression</h3>
-          <p>Spiritual exploration and guided consultation.</p>
-        </div>
-
-        <div class="service">
-          <div class="service-icon">🌟</div>
-          <h3>Prosperity</h3>
-          <p>Guidance for prosperity and life goals.</p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- CONTACT -->
-
-  <section class="contact" id="contact">
-
-    <div class="container">
-
-      <div class="contact-box">
-
-        <h2>Contact for a Tension-Free Life</h2>
-
-        <p>
-          Get in touch for personalised consultation.
-        </p>
-
-        <a class="phone" href="tel:+919811562656">
-          📞 9811562656
-        </a>
-
-        <a class="phone" href="tel:+917701862656">
-          📞 7701862656
-        </a>
-
-        <div class="address">
-          📍 E-122, Pandav Nagar,<br>
-          Samaspur Road,<br>
-          Delhi – 110091
-        </div>
-
-        <div class="buttons">
-
-          <a class="btn btn-primary"
-             href="tel:+919811562656">
-            Book Consultation
-          </a>
-
-          <a class="btn btn-secondary"
-             href="https://wa.me/919811562656">
-            WhatsApp Us
-          </a>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- FOOTER -->
-
-  <footer>
-
-    <div class="container">
-
-      <strong>Sash Name Is Sufficient</strong>
-
-      <p>
-        © 2026 Sash Name Is Sufficient. All rights reserved.
-      </p>
-
-    </div>
-
-  </footer>
+    <footer>
+        <p>&copy; 2026 Sash Name Is Sufficient. All Rights Reserved.</p>
+        <p>https://sashnameissufficient.com</p>
+    </footer>
 
 </body>
 </html>
